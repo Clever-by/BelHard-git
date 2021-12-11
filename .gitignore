@@ -4,7 +4,10 @@
 #no file .jpg
 #.gitignore
 *.jpg
+*.phg
 !git_file_status_lifecycle.jpg
 !python_developer.jpg
+!logo_github.png
 !logo_python.png
+!powerPoint.png
 TokenKey.txt
