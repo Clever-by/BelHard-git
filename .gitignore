@@ -1,0 +1,10 @@
+# not Directory .vscode
+/.vscode
+
+#no file .jpg
+#.gitignore
+*.jpg
+!git_file_status_lifecycle.jpg
+!python_developer.jpg
+!logo_python.png
+TokenKey.txt
