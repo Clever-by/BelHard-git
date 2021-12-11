@@ -59,11 +59,11 @@ print('Длинна строки: ' , str_l, '=', len(str_l))
 
 # *** Однотипность ковычек
 
-print("Single quote: ' '") # Вывод одинарных ''
-print('Double quote: " "') # Вывод двойных " "
+print("Single quoted: ' '") # Вывод одинарных ''
+print('Double quoted: " "') # Вывод двойных " "
 
 print('a\tb\tc\n','a\tb\tc\n', sep='', end='\\*') # \t - Табуляция
-print(r'\\fdfsd\sdf\n', "Single Quot: /.' ") # r - отключение спец-символов 
+print(r'\\fdfsd\sdf\n', 'Single quote: \'.') # r - отключение спец-символов 
 
 # *** Вывод данных
 
