@@ -83,7 +83,7 @@
 		<td style="width: 40%; text-align: center;" valign="top"><p style="text-align: justify;">Данные в Python:<br>Начнём с того, что все данные в Python являются объектами. Они могут создаваться нами вручную, либо быть изначально встроенными на уровне языка. Объект можно охарактеризовать, как особую область памяти, где хранятся некоторые значения и определённые для этих значений операции. Проиллюстрировать фундаментальность объектов в разрезе Питона можно, приведя пример общего вида программы на этом языке:</p>
 		<hr />
 		<p><dl>
-				<dt style="text-align: left;"><b>Задание:</b></dd>
+				<dt style="text-align: left;"><b>Задание:</b></dt>
 				<dt style="text-align: left;">Создать программу, котроая получет на вход две строки и выводит на экран следующий текст:</dt>
 					<dd style="text-align: left;"> - Вы ввели две строки "S1" и "S2"?</dd>
 					<dd style="text-align: left;"> - Их длина соответственно <длина первой строки> и  <длина второй строки>?</dd>
@@ -94,7 +94,7 @@
 					<dd style="text-align: left;"> - A наоброт? (True/False)</dd>
 				<dt style="text-align: left;">Создать программу, которая на вход подает числа a, b,c. Выводит целую часть и остаток от деления выражения (a<sup>2</sup>+b<sup>2</sup>)/(3b-4) на (4с<sup>5</sup>/6):</dt>
 		</dl></p>
-		<p><a href="images/v3-1.jpg"><img height=125 width=200 src="images/v3-1.jpg"></a></p>
+		<p><a href="images/v3-1.jpg"><img width=150px src="images/v3-1.jpg"></a></p>
 		<hr />
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
@@ -115,12 +115,54 @@
 		<td style="width: 40%; text-align: center;" valign="top">
 		<p style="text-align: justify;">Collection Python:<br>Коллекция в Python — программный объект (переменная-контейнер), хранящая набор значений одного или различных типов, позволяющий обращаться к этим значениям, а также применять специальные функции и методы, зависящие от типа коллекции.</p>
 		<hr />
+		<p><dl>
+				<dt style="text-align: left;"><b>Задание:</b></dt>
+				<dt style="text-align: left;">Создать программу, котроая на вход получет данные о треугольниках (а именно катеты) и выводит на экран информацию о каждом треугольнике в формате:</dt>
+					<dd style="text-align: left;"> - Треугольник 1 с катетами {a} и {b} имеет площадь {S} и гипотенузу {c}</dd>
+					<dd style="text-align: left;"> - Гипотенуза c<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup></dd>
+					<dd style="text-align: left;"> - Площать S=(a*b)/2</dd>
+				<dt style="text-align: left;">Сделать две реализации этой программы:</dt>
+					<dd style="text-align: left;"> - Первая получает на вход две строки:<br>a1 a2 a3 a4...<br>b1 b2 b3 b4...</dd>
+					<dd style="text-align: left;"> - Вторая получает на вход только одну строку:<br>a1 b1 a2 b2 a3 b3...</dd>
+		</dl></p>
+		<p><a href="images/v4-1.jpg"><img width=150 src="images/v4-1.jpg"></a></p>
+		<p><dl>
+				<dt style="text-align: left;">Создать список словарей, которые содержат поля имя, возраст, пол.</dt>
+				<dt style="text-align: left;">При помощи переменной persons найдите и сохраните в переменную следующую информацию:</dt>
+					<dd style="text-align: left;"> - Количество всех людей?</dd>
+					<dd style="text-align: left;"> - Сколько мужчин, сколько женщин?</dd>
+					<dd style="text-align: left;"> - Посчитать сколько совершено летних персон</dd>
+					<dd style="text-align: left;"> - Список всех имён</dd>
+					<dd style="text-align: left;"> - 3 самых встречающих имён</dd>
+					<dd style="text-align: left;"> - Вывести все имена мужчин старше 35, имя которого начинается с F</dd>
+		</dl></p>
+		<p><a href="images/v4-2.jpg"><img width=150 src="images/v4-2.jpg"></a> 
+			<a href="images/v4-3.jpg"><img width=150 src="images/v4-3.jpg"></a></p>
+		<hr />
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
-		<p style="text-align: center;"><a href="lessons/4.pptx" download title="Lesson 4"><img style="border-width: 0px; margin: 1px auto 1px auto;" title="Lesson 4" src="images/powerPoint.png" alt="Lesson 3" width="100px" /><br>Lesson 4</a></p>
+		<p style="text-align: center;"><a href="lessons/4.pptx" download title="Lesson 4"><img style="border-width: 0px; margin: 1px auto 1px auto;" title="Lesson 4" src="images/powerPoint.png" alt="Lesson 4" width="100px" /><br>Lesson 4</a></p>
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
 		<p style="text-align: center;"><a href="TaskPython-V4.py" download title="source code">TaskPython-V4</a></p>
+		<hr />
+		<h3 style="text-align: center;">HomeWork</h3>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 10%; text-align: center;" valign="top">
+		<p style="text-align: center;">5</p>
+		</td>
+		<td style="width: 40%; text-align: center;" valign="top">
+		<p style="text-align: justify;">Условная инструкция if-elif-else:<br>Оператор ветвления, основной инструмент выбора в Python. Оператор выбирает, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия. Синтаксис инструкции if. Сначала записывается часть if с условным выражением, далее могут следовать одна или более необязательных частей elif, и, наконец, необязательная часть else.</p>
+		<p style="text-align: justify;">Циклы for и while:<br>Важной частью структурного программированию помимо операторов условий считаются циклы. Они помогают автоматизировать последовательные задачи в программе, а именно: повторить выполнение определенных участков кода. Такая необходимость возникает достаточно часто, когда нужно сделать что-нибудь много раз, тем самым, циклы упрощают эту задачу.</p>
+		<hr />
+		</td>
+		<td style="width: 20%; text-align: center;" valign="top">
+		<p style="text-align: center;"><a href="lessons/5.pptx" download title="Lesson 5"><img style="border-width: 0px; margin: 1px auto 1px auto;" title="Lesson 5" src="images/powerPoint.png" alt="Lesson 5" width="100px" /><br>Lesson 5</a></p>
+		</td>
+		<td style="width: 20%; text-align: center;" valign="top">
+		<p style="text-align: center;"><a href="TaskPython-V5.py" download title="source code">TaskPython-V5</a></p>
 		</td>
 	</tr>
 </tbody>
