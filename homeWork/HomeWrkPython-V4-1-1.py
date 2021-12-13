@@ -52,8 +52,8 @@ print('addition collection b: ', b)
     
 num = 0
 while index > num:
-    print('Катет a=',a[num])
-    print('Катет b=',b[num])
+    print('Катет a =',a[num])
+    print('Катет b =',b[num])
     #Calculation the area of a triangel
     print('Площадь треугольника равна =', triangel(abs(int(a[num])), abs(int(b[num]))))
     # Calculation of the hypotenuse
