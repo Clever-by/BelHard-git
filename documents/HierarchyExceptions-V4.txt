@@ -1,0 +1,39 @@
+Base Exception
+***
+Exception
+SystemExit
+GeneratorExit
+KeyboardInterrupt
+
+
+Exception
+***
+Attribute Error
+Arithmetric Error
+EOF Error
+Name Error
+Lookup Error
+OS Error
+Type Error
+Value Error
+
+
+Arithmetric Error
+***
+ZeroDivision Error
+Floating Point Error
+Overflow Error
+
+
+Lookup Error
+***
+Index Error
+Key Error
+
+
+OS Error
+***
+FileNotFound Error
+Interrupted Error
+Premission Error
+TimeOut Error
