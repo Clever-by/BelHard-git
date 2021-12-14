@@ -6,12 +6,12 @@
 # *** Встроенные функции
 # *** Сортировка
 # *** Встроенные функции
-a0 = []
+a1 = []
 a2 = [1, 2, 3, -6, 10, 3, 20, 4, 3]
 a3 = list()
 a4 = list(a2)
-
-print('Output element collection: ', a4[2], '\n', 'Output collection: ', a2) # Вывод с переносом на новую строку
+# Вывод с переносом на новую строку
+print('Output element collection a4[2]:', a4[2], '\n'+'Output collection a2: ', a2) 
 # a[start:end:step]
 # -1 - обратный отсчет 
 print('Output range on step: ', a4[1:4:2])
@@ -22,7 +22,7 @@ print('Output range on step: ', a4[1:4:2])
 a4.append(3)        # - Добавить в конец строки
 a2.insert(4, 7)     # - добавить по индексу
 
-print('addition collection: ', 'a4:', a4, ' and ', 'a2:', a2)
+print('addition collection a4:', a4, ' and '+'a2:', a2)
 
 a4.remove(3)        # - удадение по значению
 
