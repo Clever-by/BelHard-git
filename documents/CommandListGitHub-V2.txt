@@ -1,5 +1,13 @@
 ## *** About GitHub *** ##
 
+git config - Утилита? которая позваоляет просматривать и настраивать параметры, контролирующие все аспекты работы Git, а также его внешний вид
+git config -l - Cписок конфигурации Git
+git config --global user.name "Имя Фамилия"
+git config --global user.email Email@example.com
+git config --global core.editor emacs - Если вы хотите использовать другой текстовый редактор, например, Emacs
+git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+git config --list --show-origin
+
 
 git init - создает новый репозиторий Git и инициализация директории для отсдеживания контроля версии по проекту.
 git status - Проверка состояния фпйлов.
