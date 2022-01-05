@@ -35,4 +35,20 @@ def sumArray(str_array):
 
 print('Сумма всех эдементов в массиве:', sumArray([1,2,3,4]))
 
+
+def sum_all(a, b, c, d):
+    
+    def sum_in(s1, s2):
+        return s1+s2
+    
+    return sum_in(
+        sum_in(a, b),
+        sum_in(c, d)
+    )
+
+list_el = [1,2,3,4]
+#list_el = list(1,2,3,4)
+s = sum_all(list_el[0], list_el[1], list_el[2], list_el[3])
+print(f"Сумма функции = {s}")
+
 # End
