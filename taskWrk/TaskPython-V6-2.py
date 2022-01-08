@@ -13,12 +13,15 @@ def sumArray(*str_array, **named):
         result += item
     
     for item in named.values():
-        result += item
+        print(type(item))
+        if type(item) == type(int(0)):
+            result += item
     
     return result
 
 
-#rez = sumArray(1, 2, 3, 4, a='Col', b='Key')
+rez = sumArray(1, 2, 3, 4, a="Key", b=6)
+print(rez)
 print('Сумма всех эдементов в массиве:', sumArray(1, 2, 3, 4, a=6, b=9))
 
 

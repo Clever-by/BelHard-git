@@ -3,7 +3,7 @@
 
 # *** Генератор
 
-a2 = [1, 2, 3, -6, 10, 3, 20, 4, 3]
+a2 = [1, 2, 3, -6, 10, 3, 20, -4, 3]
 
 def positive(value):
     return value % 2 == 0 and value > 0
@@ -36,7 +36,7 @@ print('Collection a2 in Other If1: ', ot1)
 #
 print('Output collection a2: ', a2)
 ot2 = []
-#ot2 = [(if i < 0 i+200) for i in a2]
+ot2 = [i+100 if i < 0 else i for i in a2]
 print('Collection a2 in Other If2: ', ot2)
 
 
