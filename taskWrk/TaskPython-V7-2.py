@@ -38,6 +38,8 @@ class HomoSapince:
     @staticmethod
     def work():
         return 'Стремление к труду'
+
+
     
 i = HomoSapince(82, 170)
 you = HomoSapince(83, 172)
@@ -47,11 +49,17 @@ print(you.talk('ru'))
 i.weight = 85
 print("ip:", i.weight_index())
 
-baby = HomoSapince.born()
+#baby = HomoSapince.born()
 #print(baby)
-baby.talk('ru')
+#baby.talk('ru')
+
+HomoSapince.born().arms
 
 baby1 = HomoSapince.work()
 print(baby1)
+
+#baby2 = HomoSapince(5, 50)
+#print(baby2)
+
 
 # End

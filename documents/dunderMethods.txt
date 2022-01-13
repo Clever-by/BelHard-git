@@ -1,0 +1,20 @@
+Использование dunder методов в Python:
+
+
+__eq__		== 
+__ne__  	!=
+__lt__  	<
+__gt__  	>
+__le__  	<=
+__ge__  	>=
+
+
+__add__ 	+
+__sub__  	-
+__mul__  	*
+
+
+__iter__	iter
+__next__	next
+
+__doc__		Documents
