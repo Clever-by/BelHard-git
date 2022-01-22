@@ -17,6 +17,7 @@
 			<li><p style="text-align: left;"><a href="#lesson_6">Lesson: 6</a></p></li>
 			<li><p style="text-align: left;"><a href="#lesson_7">Lesson: 7</a></p></li>
 			<li><p style="text-align: left;"><a href="#lesson_8">Lesson: 8</a></p></li>
+			<li><p style="text-align: left;"><a href="#lesson_9">Lesson: 9</a></p></li>
 		</ol>
 		</td>
 		<td style="width: 60%; text-align: center;" valign="top">
@@ -287,14 +288,41 @@
 		</td>
 		<td style="width: 40%; text-align: center;" valign="top">
 		<p style="text-align: justify;">Объектно-ориентированное программирование:<br>ООП - методология программирования, основанная на представлении программы в виде совокупности объектов, каждый из которых является экземпляром определённого класса, а классы образуют иерархию наследования.</p>
+		<p style="text-align: justify;">Наследование — свойство системы, позволяющее описать новый класс на основе уже существующего с частично или полностью заимствованной  функциональностью.<br>Класс, от которого производится наследование,  называется базовым, родительским или суперклассом.<br>Новый класс —  потомком, наследником, дочерним или производным классом.</p>
+		<p style="text-align: justify;">Инкапсуляция — ограничение доступа к составляющим объект компонентам (методам и переменным). Инкапсуляция делает некоторые из компонент доступными только внутри класса.<br>Инкапсуляция в Python работает лишь на уровне соглашения между программистами о том, какие атрибуты являются общедоступными, а какие — внутренними.<br>Одиночное подчеркивание в начале имени атрибута говорит о том, что переменная или метод не предназначен для использования вне методов класса, однако атрибут доступен по этому имени.</p>
+		<p style="text-align: justify;">Полиморфизм - это способность выполнять действие над объектом независимо от его типа. Это обычно реализуется путем создания базового класса и наличия двух или более подклассов, которые все реализуют методы с одинаковой сигнатурой. Любая другая функция или метод, который манипулирует этими объектами, может вызывать одни и те же методы независимо от того, с каким типом объекта он работает, без предварительной проверки типа.</p>
+		<p style="text-align: justify;">Декомпозиция — разделение целого на части. Один из инструментов построения абстракций и декомпозиции задач в языке Python — функции. При разработке своих функций рекомендуется руководствоваться следующими принципами: Принцип единственной ответственности (The Single Responsibility Principle, SRP).</p>
+		<p style="text-align: justify;">Утиная типизация – это концепция, характерная для языков программирования с динамической типизацией, согласно которой конкретный тип или класс объекта не важен, а важны лишь свойства и методы, которыми этот объект обладает.</p>
+		<p style="text-align: justify;">Декоратор @property. Аксессоры.<br>Функция property() используется для определения свойств в классах. Метод property() обеспечивает интерфейс для атрибутов экземпляра класса. Он инкапсулирует атрибуты экземпляров и предоставляет свойства. Метод property() принимает на вход методы get, set и delete, и возвращает объекты класса property.<br>Вместо метода property() лучше использовать декоратор property<br><a href="https://www.tutorialsteacher.com/python/property-decorator" title="Python Property Decorator - @property"  target="_blank">Python Property Decorator - @property:</a></p>
 		<hr />
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
 		<p style="text-align: center;"><a href="lessons/8.pptx" download title="Lesson 8"><img style="border-width: 0px; margin: 1px auto 1px auto;" title="Lesson 8" src="images/powerPoint.png" alt="Lesson 8" width="100px" /><br>Lesson 8</a></p>
-		
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
 		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-1.py" download title="source code">TaskPython-V8-1</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-2.py" download title="source code">TaskPython-V8-2</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-3.py" download title="source code">TaskPython-V8-3</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-4.py" download title="source code">TaskPython-V8-4</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-5.py" download title="source code">TaskPython-V8-5</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-6.py" download title="source code">TaskPython-V8-6</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-7.py" download title="source code">TaskPython-V8-7</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V8-8.py" download title="source code">TaskPython-V8-8</a></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 10%; text-align: center;" valign="top">
+		<p style="text-align: center;"><a name="lesson_9">9</a></p>
+		</td>
+		<td style="width: 40%; text-align: center;" valign="top">
+		<p style="text-align: justify;">Import<br>Python код в одном модуле получает доступ к коду в другом модуле в процессе его импорта. Оператор import — это наиболее распространенный способ вызова механизма импорта, но не единственный способ. Такие функции, как importlib.import_module() и встроенная __import__(), также могут использоваться для вызова механизма импорта.</p>
+		<hr />
+		</td>
+		<td style="width: 20%; text-align: center;" valign="top">
+		<p style="text-align: center;"><a href="lessons/9.pptx" download title="Lesson 9"><img style="border-width: 0px; margin: 1px auto 1px auto;" title="Lesson 8" src="images/powerPoint.png" alt="Lesson 9" width="100px" /><br>Lesson 9</a></p>
+		</td>
+		<td style="width: 20%; text-align: center;" valign="top">
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V9-1.py" download title="source code">TaskPython-V9-1</a></p>
 		</td>
 	</tr>
 </tbody>
