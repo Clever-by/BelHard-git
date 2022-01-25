@@ -14,7 +14,7 @@ print(factorial(6))
 def f(n):
     res = 1
     for num in range(1, n+1):
-        res += num
+        res *= num
     return res
 
 

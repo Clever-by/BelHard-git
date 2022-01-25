@@ -14,7 +14,7 @@ class Person:
     def get_full_name(self):
          return f'Chelovek: {self.fn} {self.ln}'
 
-    @get_full_name.setter # Оберугли в декоратор с аксессором
+    @get_full_name.setter # Обернули в декоратор с аксессором
     def set_full_name(self, val):
         self.fn, self.ln = val.split()
     

@@ -15,8 +15,8 @@ def squads():
 for num in squads():
         print("element:", num)
 
-# *** Второй вариант задать второй вариант:
-gen = (num**2 for num in range(100))
+# *** Второй вариант задать через генератор:
+gen = (num**2 for num in range(10))
 for num in gen:
     print("element: ", num)
 
