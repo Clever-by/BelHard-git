@@ -74,10 +74,10 @@ res_list = logger(sum)(3,5,6)
 print(res_list)
 
 # передача фунуции sum через декоратор
-sum = logger(sum)
+#sum = logger(sum)
 
-res_sum, res_len = sum(1,2,3,5)
-print("Результат: ", res_sum)
+#res_sum, res_len = sum(1,2,3,5)
+#print("Результат: ", res_sum)
 
 
 # End
