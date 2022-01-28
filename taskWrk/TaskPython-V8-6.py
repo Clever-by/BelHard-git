@@ -30,6 +30,7 @@ print(chel.get_full_name) # После оборачивания в декора�
 
 chel.set_full_name = 'Kari Cool'
 print(chel.get_full_name)
+print(chel.set_full_name)
 
 
 

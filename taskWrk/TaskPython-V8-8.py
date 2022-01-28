@@ -42,7 +42,7 @@ class Line(Pos, Style):
     
     def show(self):
         # supper()
-        super().show_pos()
+        super().self.show_pos()
         super().show_width()
         
         # Насделование
