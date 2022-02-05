@@ -3,17 +3,15 @@
 #  Import, from, as
 
 #  Простой вариант
-from factory.pipe import pipe# as fun_pipe
 
-if __name__ == '__TaskPython-V9-1__':
-    for _, towel in zip(range(4), pipe()):
+
+#import factory.pipe
+#from factory import pipe
+from factory.pipe import pipe as fun_pipe
+
+if __name__ == '__main__':
+    for _, towel in zip(range(4), fun_pipe()):
         print(towel)
 
-
-
-# Для использования всех функции модуля
-import math
-
-print(math.pi)
 
 # End
