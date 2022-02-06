@@ -40,7 +40,7 @@ class Line:
         
     def getlenght(self):
         print('Lenght:')
-        return float(self.point_start + self.point_end)
+        return float((self.point_start**2 + self.point_end**2)**(1/2))
     
     def setlenght(self, point_new_start, point_new_end):
         if point_new_start is None:
@@ -52,7 +52,7 @@ class Line:
         else:
             self.point_end = point_new_end
         #print('Lenght:')
-        return float(point_new_start + point_new_end)
+        return float((self.point_start**2 + self.point_end**2)**(1/2))
 
 
 #Объявляем Class Share
