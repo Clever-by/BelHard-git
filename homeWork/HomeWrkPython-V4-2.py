@@ -89,9 +89,6 @@ l_age = list()
 s_age = set()
 s_name = set()
 
-def unique(list_in):
-    list_out = list(set(list_in))
-    return list_out
 
 while count_ls > num:
     #print(persons[num]['name'])
