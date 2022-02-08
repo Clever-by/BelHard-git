@@ -33,8 +33,8 @@ print(f'action={args.action}')
 
 # python .\HomeWrkPython-V9-2.py --help
 # python .\HomeWrkPython-V9-2.py -h
-# a - опционально
 # python .\HomeWrkPython-V9-2.py -a Y
+# a - опционально
 # Y - 'Вешаем игрушку', 
 # N - 'Не сегодня' 
 

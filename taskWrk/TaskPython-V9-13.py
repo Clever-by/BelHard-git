@@ -15,9 +15,9 @@ logging.basicConfig(
 )
 
  
-logging.debug("This is a debug message")
+logging.debug("The application is running in debug mode")
 logging.info("Informational message")
-logging.error("An error has happened!")
+logging.error("An error has occurred in the application!")
 
 #logging.DEBUG
 #logging.INFO

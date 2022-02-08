@@ -8,7 +8,7 @@ from datetime import datetime
 dt_start = datetime.strftime(datetime.now(), "%d%m%Y_%H%M%S")
 
 logging.basicConfig(
-    filename="homeWork\logs\inform_"+dt_start+".log", 
+    filename="homeWork\logs\loaded_"+dt_start+".log", 
     level=logging.INFO
 )
 
@@ -25,7 +25,13 @@ for i in range(10):
 
 dt_finish = datetime.strftime(datetime.now(), "%d%m%Y_%H%M%S")
 
-logging.info(f"Informational message\nStart: {dt_start} \nImported file to directory: {str(cd)} \nStop: {dt_finish}")
+print(f'Finished load file in directory {str(cd)}')
 
+logging.debug("The application is running in debug mode")
+logging.info(f"Informational message"
+             f"\nStart: {dt_start}"
+             f"\nImported file to directory: {str(cd)}"
+             f"\nFinished: {dt_finish}")
+#logging.error("An error has occurred in the application!")
 
 #End

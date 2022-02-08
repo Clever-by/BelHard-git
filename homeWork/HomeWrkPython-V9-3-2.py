@@ -7,11 +7,9 @@ from pathlib import Path
 dt_start = datetime.strftime(datetime.now(), "%d%m%Y_%H%M%S")
 
 logging.basicConfig(
-    filename="homeWork\logs\debug_"+dt_start+".log", 
+    filename="homeWork\logs\chaned_"+dt_start+".log", 
     level=logging.INFO
 )
-
-logging.info(f"Informational message\nStart: {dt_start}")
 
 cd = Path('./homeWork/directory')
 l_file = list()
@@ -54,14 +52,15 @@ l_month = unique(l_month)
 l_month.sort()
 l_year.sort()
 l_file.sort()
-logging.info(f"List file: {l_file}")
 #print(l_file)
 #print(l_year)
 #print(l_month)
-print('.')
-print('|---directory')
+log_scheme = f'.'
+log_scheme = log_scheme + f'\n|---directory'
+#print('|---directory')
 for sort_dir in l_year:
-    print(f'|   |---{sort_dir}')
+    log_scheme = log_scheme + f'\n|   |---{sort_dir}'
+    #print(f'|   |---{sort_dir}')
     cd_dir = cd / f'{sort_dir}' 
     cd_dir.mkdir(exist_ok=True)
     for sort_subdir in l_month:
@@ -70,19 +69,33 @@ for sort_dir in l_year:
         lenFile = len(fileTXT)
         #listFile(fileTXT, lenFile, l_file)
         if listFile(fileTXT, lenFile, l_file) is True:
-            print(f'|   |   |---{sort_subdir}')
+            log_scheme = log_scheme + f'\n|   |   |---{sort_subdir}'
+            #print(f'|   |   |---{sort_subdir}')
             cd_subdir = cd_dir / f'{sort_subdir}' 
             cd_subdir.mkdir(exist_ok=True)
             for sort_file in l_file:
                 if sort_file[0:lenFile] == fileTXT:
-                    print(f'|   |   |   |---{sort_file[lenFile:]}')
+                    log_scheme = log_scheme + f'\n|   |   |   |---{sort_file[lenFile:]}'
+                    #print(f'|   |   |   |---{sort_file[lenFile:]}')
                     cd_file = cd_subdir / f'{sort_file[lenFile:]}' 
                     cd_file.touch()
-print('|'+'-'*12)
+#print('|'+'-'*12)
+log_scheme = log_scheme + '\n|'+'-'*12
 
 dt_finish = datetime.strftime(datetime.now(), "%d%m%Y_%H%M%S")
 
-logging.info(f"Finished. Updated file to directory: {str(cd)} \nCreated Dir and File\nStop: {dt_finish}")
+print(f'Finished change file in directory {str(cd)}')
+
+logging.debug("The application is running in debug mode")
+logging.info(f"Informational message"
+             f"\nStart: {dt_start}"
+             f"\nList file:"
+             f"\n{l_file}"
+             f"\nScheme:"
+             f"\n{log_scheme}"
+             f"\nUpdated: Created Dir and File to directory: {str(cd)}"
+             f"\nFinished: {dt_finish}")
+#logging.error("An error has occurred in the application!")
 
 
 #End
