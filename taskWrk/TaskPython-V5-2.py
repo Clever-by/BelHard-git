@@ -1,5 +1,6 @@
 # *** Циклы For and While
 
+
 num = range(5)
 str_num = ''
 

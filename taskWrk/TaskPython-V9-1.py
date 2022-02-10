@@ -10,7 +10,7 @@
 from factory.pipe import pipe as fun_pipe
 
 if __name__ == '__main__':
-    for _, towel in zip(range(4), fun_pipe()):
+    for _, towel in zip(range(3), fun_pipe()):
         print(towel)
 
 

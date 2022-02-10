@@ -8,3 +8,6 @@ if st_about == 'Y' or st_about == 'y':
 
 else:
     print('Жаль, что вам не интересно. Посетите сайт: https://www.python.org/')
+
+
+#End
