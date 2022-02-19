@@ -3,13 +3,13 @@
 
 list_str = 'Основной механизм работы с содержимым файлов - встроенная функция open'
 
-with open(r"./homeWork/resourse/textList.txt", "w", encoding="utf-8") as f:
+with open(r"./homeWork/resource/textList.txt", "w", encoding="utf-8") as f:
     f.write(list_str)
 
     f.close()
 
 
-with open(r"./homeWork/resourse/textList.txt", "r", encoding="utf-8") as f:
+with open(r"./homeWork/resource/textList.txt", "r", encoding="utf-8") as f:
     string = f.read()
 
     f.close()

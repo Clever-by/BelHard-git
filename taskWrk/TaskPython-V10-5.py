@@ -22,19 +22,21 @@ data = {
 #dump_all - пишет только индекс
 #print(yaml.dump_all(data))
 
-with open(r"./taskWrk/dump/dump_yaml", "w", encoding="utf-8") as file:
-    yaml.dump(data, file)
-    file.close()
+with open(r"./taskWrk/dump/dump_yaml", "w", encoding="utf-8") as wFile:
+    yaml.dump(data, wFile)
+    #file.close()
  
-with open(r"./taskWrk/dump/dump_yaml", "r", encoding="utf-8") as file:
+with open(r"./taskWrk/dump/dump_yaml", "r", encoding="utf-8") as rFile:
     # Метод loads загружает строку
-    dump_load = file.read()
+    dump_load = rFile.read()
     y_data = yaml.load(dump_load)
     
     # Метод load загружает файл
-    #y_data = yaml.load(file) 
+    #y_data = yaml.load(rFile) 
+    # или
+    #y_data = yaml.safe_load(rFile) 
     
-    file.close()
+    #file.close()
 
 
 print(type(y_data))

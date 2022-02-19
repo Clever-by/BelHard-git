@@ -345,18 +345,18 @@
 		<p style="text-align: justify;">Создание поверхностных и глубоких копий с помощью copy.<br>Поверхностная копия создает новый составной объект, и затем (по мере возможности) вставляет в него ссылки на объекты, находящиеся в оригинале.<br>Глубокая копия создает новый составной объект, и затем рекурсивно вставляет в него копии объектов, находящихся в оригинале.</p>
 		<ol><p style="text-align: center;">Модули:</p>
 			<li><p style="text-align: left;">Математические модули: decimal, fractions, math, random.</p></li>
-			<li><p style="text-align: left;">Дополнительные итераторы из itertools.</li>
-			<li><p style="text-align: left;">Работа с ОС с помощью os.</li>
-			<li><p style="text-align: left;">Работа с интерпретатором с помощью sys.</li>
-			<li><p style="text-align: left;">Работа с путями ОС с помощью pathlib.</li>
-			<li><p style="text-align: left;">Работа с классами данных с помощью dataclasses.</li>
-			<li><p style="text-align: left;">Работа с перечислениями с помощью enum.</li>
-			<li><p style="text-align: left;">Работа с датой и временем с помощью datetime..</li>
-			<li><p style="text-align: left;">Работа с типами с помощью typing.</li>
-			<li><p style="text-align: left;">Работа с регулярными выражениями с помощью re.</li>
-			<li><p style="text-align: left;">Работа с аргументами командной строки с помощью argparse.</li>
-			<li><p style="text-align: left;">Логгирование с помощью logging.</li>
-			<li><p style="text-align: left;">Отладчик pdb.</li>
+			<li><p style="text-align: left;">Дополнительные итераторы из itertools.</p></li>
+			<li><p style="text-align: left;">Работа с ОС с помощью os.</p></li>
+			<li><p style="text-align: left;">Работа с интерпретатором с помощью sys.</p></li>
+			<li><p style="text-align: left;">Работа с путями ОС с помощью pathlib.</p></li>
+			<li><p style="text-align: left;">Работа с классами данных с помощью dataclasses.</p></li>
+			<li><p style="text-align: left;">Работа с перечислениями с помощью enum.</p></li>
+			<li><p style="text-align: left;">Работа с датой и временем с помощью datetime.</p></li>
+			<li><p style="text-align: left;">Работа с типами с помощью typing.</p></li>
+			<li><p style="text-align: left;">Работа с регулярными выражениями с помощью re.</p></li>
+			<li><p style="text-align: left;">Работа с аргументами командной строки с помощью argparse.</p></li>
+			<li><p style="text-align: left;">Логгирование с помощью logging.</p></li>
+			<li><p style="text-align: left;">Отладчик pdb.</p></li>
 		</ol>
 		<hr />
 		<p><dl>
@@ -403,6 +403,25 @@
 		</td>
 		<td style="width: 40%; text-align: center;" valign="top">
 		<p style="text-align: justify;">Работа с файлами<br>Основной механизм работы с содержимым файлов - встроенная функция open (а так же метод open у pathlib.Path).</p>
+		<p style="text-align: justify;">Сериализация - процедура представления данных в текстовом виде. Десериализация - процедура обратная серилизации: создание объектов из текстового вида.</p>
+		<ol><p style="text-align: center;">Основные типы:</p>
+			<li><p style="text-align: left;">pickle</p></li>
+			<li><p style="text-align: left;">json</p></li>
+			<li><p style="text-align: left;">yaml</p></li>
+			<li><p style="text-align: left;">protobuf</p></li>
+			<li><p style="text-align: left;">messagepack</p></li>
+		</ol>
+		<p style="text-align: justify;">Pickle - это собственный формат сериализации/десериализации данных в python.<br>Минусы: менее распространённый и редко используется.<br>Плюсы: можно сериализовать практически всё. Классы, функции, объекты.</p>
+		<p style="text-align: justify;">Json, yaml - самые распространённые методы сериализации. Плюсы: распространённость, удобочитаемы для людей.Минус: сериализуют только примитивные типы, словари и массивы.</p>
+		<p style="text-align: justify;">Pydantic<br>Продвинутая библиотека для работы с данными. Позволяет сериализовать/десериализовать сложные данные удобным способом, а так же проводить валидацию (проверка данных на корректность). Активно использует аннотации.</p>
+		<p style="text-align: justify;">CSV<br>Файл CSV – это текстовый файл, в котором каждая строка  имеет несколько полей, разделенных запятыми, или другими разделителями. Вы можете рассматривать каждую строчку как ряд, а каждое поле — как  столбец, а весь файл — как таблицу.</p>
+		<p style="text-align: justify;">Excel<br>Формат работы с табличными данными от Microsoft. Для работы в Python используется third-party библиотека openpyxl.</p>
+		<p style="text-align: justify;">Pandas - это высокоуровневая библиотека для анализа данных на Python, которая написана поверх библиотеки numpy. Позволяет работать с большими объёмами данных, агрегировать их, фильтровать, преобразовывать. Чем-то похожа на SQL внутри Python.</p>
+		<hr />
+		<p><dl>
+				<dt style="text-align: left;"><b>Задание:</b></dt>
+				<dt style="text-align: left;"><a href="homeWork/10.pdf" download title="homeWork">Задание 10</a></dt>
+		</dl></p>
 		<hr />
 		</td>
 		<td style="width: 20%; text-align: center;" valign="top">
@@ -414,12 +433,19 @@
 		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-3.py" download title="source code">TaskPython-V10-3</a></p>
 		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-4.py" download title="source code">TaskPython-V10-4</a></p>
 		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-5.py" download title="source code">TaskPython-V10-5</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-6.py" download title="source code">TaskPython-V10-6</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-7.py" download title="source code">TaskPython-V10-7</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-8.py" download title="source code">TaskPython-V10-8</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-9.py" download title="source code">TaskPython-V10-9</a></p>
+		<p style="text-align: center;"><a href="taskWrk/TaskPython-V10-10.py" download title="source code">TaskPython-V10-10</a></p>
 		<hr />
 		<h3 style="text-align: center;">HomeWork</h3>
 		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-1.py" download title="homeWork">HomeWrkPython-V10-1</a></p>
 		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-2.py" download title="homeWork">HomeWrkPython-V10-2</a></p>
 		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-3-1.py" download title="homeWork">HomeWrkPython-V10-3-1</a></p>
 		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-3-2.py" download title="homeWork">HomeWrkPython-V10-3-2</a></p>
+		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-4.py" download title="homeWork">HomeWrkPython-V10-4</a></p>
+		<p style="text-align: center;"><a href="homeWork/HomeWrkPython-V10-5.py" download title="homeWork">HomeWrkPython-V10-5</a></p>
 		</td>
 	</tr>
 </tbody>

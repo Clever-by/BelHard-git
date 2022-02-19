@@ -19,22 +19,22 @@ data = {
 
 #print(json.dumps(data))
 
-with open(r"./taskWrk/dump/dump_json", "w", encoding="utf-8") as file:
-    json.dump(data, file)
-    file.close()
+with open(r"./taskWrk/dump/dump_json", "w", encoding="utf-8") as wFile:
+    json.dump(data, wFile)
+    #file.close()
     
-with open(r"./taskWrk/dump/dump_json", "r", encoding="utf-8") as file:
+with open(r"./taskWrk/dump/dump_json", "r", encoding="utf-8") as rFile:
     # Метод loads загружает строку
-    #dump_load = file.read()
+    #dump_load = rFile.read()
     #j_data = json.loads(dump_load)
     
     # Метод load загружает файл
-    j_data = json.load(file) 
+    j_data = json.load(rFile) 
     
-    file.close()
+    #file.close()
 
 
-#print(j_data)
+print(j_data)
 #print(j_data['text'])
 
 l = j_data['int_list']
